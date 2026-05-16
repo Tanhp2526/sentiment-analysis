@@ -1,0 +1,22 @@
+# Data files (too large for GitHub)
+data/raw/*.csv
+data/processed/*.csv
+data/raw/aclImdb/
+data/raw/*.tar.gz
+
+# Model files
+models/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
