@@ -198,4 +198,12 @@ print(f"\n{'=' * 60}")
 print(f"BUOC 1 HOAN THANH!")
 print(f"{'=' * 60}")
 print(f"""
+Tom tat:
+  Dataset: IMDB Dataset.csv (Kaggle)
+  Tong:  {df.shape[0]:,} reviews
+  Train: {train_df.shape[0]:,} reviews (Pos: {train_pos:,} | Neg: {train_neg:,})
+  Test:  {test_df.shape[0]:,} reviews (Pos: {test_pos:,} | Neg: {test_neg:,})
+  Trung binh: {mean_words:.0f} tu/review
+  Bieu do: results/01_eda_overview.png
+""")
 
