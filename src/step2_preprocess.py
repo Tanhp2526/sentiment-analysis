@@ -185,6 +185,4 @@ Tom tat preprocessing:
   
   Train: {train_df.shape[0]:,} reviews
   Test:  {test_df.shape[0]:,} reviews
-
->> Buoc tiep theo: Chay file src/step3_train.py de train model
 """)
