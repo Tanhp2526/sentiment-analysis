@@ -1,4 +1,4 @@
-# 🎬 IMDB Sentiment Analysis
+# IMDB Sentiment Analysis
 
 An end-to-end NLP pipeline that classifies movie reviews as **Positive** or **Negative** using traditional Machine Learning techniques.
 
@@ -9,7 +9,7 @@ An end-to-end NLP pipeline that classifies movie reviews as **Positive** or **Ne
 
 ---
 
-## 📊 Results
+## Results
 
 Trained and compared **4 ML models** on 50,000 IMDB movie reviews:
 
@@ -30,7 +30,7 @@ Trained and compared **4 ML models** on 50,000 IMDB movie reviews:
 
 ---
 
-## 🔍 Pipeline Overview
+## Pipeline Overview
 
 ```
 Raw Text → Preprocessing → TF-IDF → Model Training → Prediction
@@ -49,7 +49,7 @@ Raw Text → Preprocessing → TF-IDF → Model Training → Prediction
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone & Install
 ```bash
@@ -119,7 +119,7 @@ sentiment-analysis/
 
 ---
 
-## 📝 What I Learned
+## What I Learned
 
 - **Text preprocessing** is crucial — removing HTML, stopwords, and stemming significantly improved model performance
 - **TF-IDF with bigrams** (ngram_range=(1,2)) captures important phrases like "not good" that unigrams miss

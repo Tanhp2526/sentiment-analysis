@@ -52,12 +52,12 @@ model, tfidf = load_model()
 # st.set_page_config: cau hinh trang web
 st.set_page_config(
     page_title="Sentiment Analysis",
-    page_icon="🎬",
+    page_icon="",
     layout="centered"
 )
 
 # Tieu de
-st.title("🎬 IMDB Sentiment Analysis")
+st.title("IMDB Sentiment Analysis")
 st.markdown("Nhap mot review phim bat ky, model se du doan **Positive** hay **Negative**.")
 st.markdown("---")
 
@@ -80,10 +80,10 @@ if st.button("Predict Sentiment", type="primary"):
         # Hien thi ket qua
         st.markdown("---")
         if prediction == 1:
-            st.success("## ✅ POSITIVE")
+            st.success("## POSITIVE")
             st.balloons()  # Hieu ung bong bay
         else:
-            st.error("## ❌ NEGATIVE")
+            st.error("## NEGATIVE")
 
         # Hien thi chi tiet
         with st.expander("Xem chi tiet xu ly"):
@@ -102,42 +102,42 @@ st.markdown("### Thu voi cac review mau:")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("👍 This movie is amazing!"):
+    if st.button("This movie is amazing!"):
         clean = clean_text("This movie is amazing and wonderful! Great acting!")
         vector = tfidf.transform([clean])
         pred = model.predict(vector)[0]
         if pred == 1:
-            st.success("POSITIVE ✅")
+            st.success("POSITIVE ")
         else:
-            st.error("NEGATIVE ❌")
+            st.error("NEGATIVE ")
 
-    if st.button("👍 Brilliant masterpiece"):
+    if st.button("Brilliant masterpiece"):
         clean = clean_text("A brilliant masterpiece with stunning visuals and incredible performances")
         vector = tfidf.transform([clean])
         pred = model.predict(vector)[0]
         if pred == 1:
-            st.success("POSITIVE ✅")
+            st.success("POSITIVE ")
         else:
-            st.error("NEGATIVE ❌")
+            st.error("NEGATIVE ")
 
 with col2:
-    if st.button("👎 Terrible waste of time"):
+    if st.button("Terrible waste of time"):
         clean = clean_text("Terrible movie. Complete waste of time. Awful acting.")
         vector = tfidf.transform([clean])
         pred = model.predict(vector)[0]
         if pred == 1:
-            st.success("POSITIVE ✅")
+            st.success("POSITIVE ")
         else:
-            st.error("NEGATIVE ❌")
+            st.error("NEGATIVE ")
 
-    if st.button("👎 Boring and predictable"):
+    if st.button("Boring and predictable"):
         clean = clean_text("The most boring and predictable movie I have ever watched. Do not recommend.")
         vector = tfidf.transform([clean])
         pred = model.predict(vector)[0]
         if pred == 1:
-            st.success("POSITIVE ✅")
+            st.success("POSITIVE ")
         else:
-            st.error("NEGATIVE ❌")
+            st.error("NEGATIVE ")
 
 
 # Footer
