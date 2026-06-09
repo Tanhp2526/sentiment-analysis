@@ -274,7 +274,4 @@ print(f"""
   Model tot nhat: {best_name} (F1={best_res['f1_score']:.4f})
   Da luu: models/best_model.pkl + models/tfidf_vectorizer.pkl
   Bieu do: results/02_model_comparison.png + 03_confusion_matrix.png
-
->> Buoc tiep theo: Chay file src/step4_predict.py de thu predict review moi
-          hoac chay app.py de tao web demo
 """)

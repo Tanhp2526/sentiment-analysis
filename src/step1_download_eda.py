@@ -205,6 +205,5 @@ Tom tat:
   Test:  {test_df.shape[0]:,} reviews (Pos: {test_pos:,} | Neg: {test_neg:,})
   Trung binh: {mean_words:.0f} tu/review
   Bieu do: results/01_eda_overview.png
-
->> Buoc tiep theo: Chay file src/step2_preprocess.py de tien xu ly text
 """)
+
